@@ -12,6 +12,43 @@ The purpose of this lab is to explore how C programs interact with the Linux ope
 * **Kernel Interaction:** Observing how user inputs and conditions influence process execution and control.
 
 
+### Requirements
+
+Before starting the lab, make sure the following are available:
+
+* **Linux:** A Linux-based operating system such as Ubuntu, Debian, Fedora, or Arch Linux.
+* **GCC:** GNU C Compiler for compiling the C programs.
+* **Bash:** A Linux shell for executing programs and commands.
+* **Git:** Required for version control and pushing the lab work to GitHub.
+* **Standard Linux utilities:** Commands such as `ps`, `echo`, and `grep`.
+
+> Most standard Linux distributions already include utilities such as `ps`, `echo`, and `grep`.
+
+### Installation
+
+For Ubuntu/Debian-based systems, install the required development tools and Git using:
+
+```bash
+sudo apt update
+sudo apt install build-essential git
+````
+
+The `build-essential` package includes GCC and other essential tools required for compiling C programs.
+
+### Verify Installation
+
+Verify that the required tools are installed:
+
+```bash
+gcc --version
+git --version
+ps --version
+```
+
+You should see version information for each command.
+
+## Getting Started
+
 ### Lab Tasks
 
 1. **The Long-Running Process**  
@@ -27,7 +64,8 @@ The purpose of this lab is to explore how C programs interact with the Linux ope
 
 ### Repository Structure
 ```text
-Lab-3/
+/
+├── LICENSE
 ├── README.md
 ├── Task-1/ (The Long-Running Process)      └── task1_alive.c, README.md
 ├── Task-2/ (Process Identity PID/PPID)     └── task2_identity.c, README.md
@@ -37,6 +75,24 @@ Lab-3/
 ```
 *Each task directory contains its corresponding source code and an individual README.md with the theoretical explanation, implementation details, verification steps, screenshots, and observations.*
 
+### Compilation
+
+The C programs in this lab can be compiled using GCC.
+
+For example:
+
+```bash
+gcc task1_alive.c -o task1
+```
+
+The same pattern can be used for the other tasks:
+
+```bash
+gcc task2_identity.c -o task2
+gcc task3_exit.c -o task3
+gcc task4_input.c -o task4
+gcc task5_control.c -o task5
+```
 
 ### Key OS Concepts
 This lab connects practical C programming with core operating-system execution concepts:
@@ -66,3 +122,5 @@ The experiments provide practical examples of how a program communicates with an
 
 ### Learning Outcome
 By completing this lab, You can develop a practical understanding of the relationship between **C programs, Linux processes, the shell, and the operating system kernel**. It demonstrates how concepts introduced in Operating Systems lectures can be observed directly through small C programs and Linux command-line tools.
+
+
