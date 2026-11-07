@@ -67,7 +67,7 @@ You should see version information for each command.
 /
 ├── LICENSE
 ├── README.md
-├── Task-1/ (The Long-Running Process)      └── task1_alive.c, README.md
+├── Task-1/ (The Long-Running Process)      └── looping.c, README.md
 ├── Task-2/ (Process Identity PID/PPID)     └── task2_identity.c, README.md
 ├── Task-3/ (Exit Codes & OS Feedback)      └── task3_exit.c, README.md
 ├── Task-4/ (Standard I/O Streams)          └── task4_input.c, README.md
