@@ -82,7 +82,7 @@ The C programs in this lab can be compiled using GCC.
 For example:
 
 ```bash
-gcc task1_alive.c -o task1
+gcc looping.c -o looping
 ```
 
 The same pattern can be used for the other tasks:
